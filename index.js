@@ -1,4 +1,7 @@
 (function(){
-    exports.to = require('./lib/bacon').to;
+    var bacon = require('./lib/bacon');
+    
+    exports.using = bacon.using;
+    exports.to = bacon.to;
 
 })();
