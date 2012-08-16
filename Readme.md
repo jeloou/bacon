@@ -35,10 +35,31 @@ Prepends all the buffers passed to "prepend" to every buffer passed to "to".
     result = b$.to('Read', 'Write').prepend(b1);
 
     result.forEach(function(buffer) {
-        console.log(buffer.toString());
+        console.log(buffer.toString()); // Read code, Write code
     });
-    // Read code.
-    // Write code.
+
+
+bacon.using(S).join([b1,..., bn] || b1,...,bn)	      
+----
+Returns a buffer which is the concatenation of buffers passed to join.  The separator between elements is S.
+
+    var b$ = require('bacon');
+	
+    result = b$.using(' ').join('I', 'GitHub', 'code');
+    result.toString() // I GitHub code
+
+
+bacon.using(S).split(buffer)	      
+----
+Returns an array of buffers, using S as the delimiter buffer. 
+
+    var b$ = require('bacon');
+	
+    result = b$.using(' ').split('I GitHub code');
+    result.forEach(function(buffer){
+        console.log(buffer.toString()); // I, GitHub, code
+
+    });
 
 
 TODO
