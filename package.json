@@ -1,0 +1,39 @@
+{
+  "name": "bacon",
+  "description": "A less ugly way to deal with buffers",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jeloou/bacon",
+  "keywords": [
+      "buffer", "join", "split", "append", "prepend"
+  ],
+  "author": {
+    "name": "Joseph Núñez <toctochello@gmail.com>",
+    "email": "toctochello@gmail.com"
+  },
+  "contributors"  : [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeloou/bacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeloou/bacon/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jeloou/bacon/blob/master/LICENSE"
+    }
+  ],
+  "main": "index",
+  "engines": {
+      "node" : ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "should": "~3.0.1",
+    "mocha": "~1.17.0"
+  },
+  "scripts": {
+    "test": "mocha test-all"
+  }
+}
