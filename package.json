@@ -34,6 +34,6 @@
     "mocha": "~1.17.0"
   },
   "scripts": {
-    "test": "mocha test-all"
+    "test": "mocha test"
   }
 }
